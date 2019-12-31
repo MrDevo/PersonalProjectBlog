@@ -23,7 +23,7 @@ body {
   background: #252a34;
 }
 a {
-  color: #333;
+  color: #eaeaea;
   text-decoration: none;
 }
 
@@ -43,9 +43,15 @@ h1 {
 
 /* Utility */
 .container {
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
   margin: auto;
   padding: 0 2rem;
+}
+.post-title{
+  color: #699ea0;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1.50rem;
 }
 
 /* Navigation */
@@ -93,32 +99,69 @@ h1 {
   font-size: 1.8rem;
 }
 
-
-/* Header - Featured Container */
-#featured .featured-container{
+/* Main content */
+#main-content {
+  margin-top: 20px;
+}
+#main-content .grid-container{
   display: grid;
-  justify-content: center;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 1rem;
-  align-items: center;
-  padding:1rem 1rem;
-  height: 50vh;
-  
+  grid-template-columns: 2fr 5fr;
+  margin-left:2rem;
+  margin-right: 2rem;
+  grid-gap: 25px;
 }
-img{
+#main-content .author-avatar{
+  margin-top: 10px;
+}
+#main-content #location{
+  font-size:0.80rem;
+  font-weight: initial;
+}
+
+#main-content .recent-posts{
+  color: #f1f1f1;
+  border-bottom: solid #51555d;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  font-weight: bolder;
+}
+#main-content .author-avatar img{
+  max-width: 110px;
+  border-radius: 50%;
+  border: 1px solid #51555d;
+  padding: 5px;
   width: 100%;
-  object-fit: cover;
+  vertical-align: middle;
+  height: auto;
 }
-#featured .featured-article{
+#main-content .author-avatar{
+  display: block;
+  width: auto;
+  height: auto;
+}
+#main-content .sidebar{
+  font-weight: bold;
+  color: #eaeaea;
+}
+#main-content .author-name{
+  margin-top: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+#main-content .author-content{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
-#featured .feature-content{
-  position: relative;
+
+/* blog posts */
+.blog-posts{
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
 }
-#featured .card-featured-tag{
-  position: absolute;
+.post-content{
+  margin-top:10px
 }
 
 /* Footer */
