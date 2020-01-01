@@ -15,7 +15,7 @@
   flex-direction: row;
 }
 #main-content .author-content{
-  justify-content: center;
+  justify-content: flex-end;
   margin-left: 20px;
   padding-bottom: 20px;
 }
