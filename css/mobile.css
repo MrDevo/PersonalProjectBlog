@@ -1,55 +1,37 @@
-/* Navigation */
-#main-nav .social {
+#main-nav .social{
   display: none;
 }
-#main-nav .container {
+#main-nav .container{
   grid-template-columns: 1fr;
   grid-gap: 1.2rem;
 }
-#main-nav ul,
-#main-nav .logo {
+#main-nav .container a,
+#main-nav ul
+{
   justify-self: center;
 }
-#main-nav ul li a {
-  padding: 0.5rem;
+#main-content .sidebar{
+  display: flex;
+  flex-direction: row;
 }
-.articles-container {
-  grid-template-columns: repeat(2, 1fr);
+#main-content .author-content{
+  justify-content: center;
+  margin-left: 20px;
+  padding-bottom: 20px;
 }
-.articles-container > *:first-child,
-.articles-container > *:last-child {
+#main-content .recent-posts{
+  margin-top: 20px;
+}
+#main-content i,
+#main-content #location {
+  display: none;
+}
+#main-content .grid-container{
   grid-template-columns: 1fr;
-  grid-column: 1;
+  grid-auto-rows: auto;
+  grid-gap: 10px;
 }
 
 @media (max-width: 600px) {
-  /* Stack Grid Items */
-  #showcase .showcase-container,
-  #home-articles .articles-container,
-  #main-footer .footer-container {
-    grid-template-columns: 1fr;
-  }
-
-  #main-footer .footer-container > *:last-child {
-    grid-column: 1;
-  }
-
-  #main-footer .footer-container > *:first-child,
-  #main-footer .footer-container > *:nth-child(2) {
-    border-bottom: #444 dotted 1px;
-    padding-bottom: 1rem;
-  }
-
-  .page-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .page-container > *:first-child {
-    grid-row: 1;
-  }
-
-  .l-heading {
-    font-size: 2rem;
-  }
+  
 }
