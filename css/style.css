@@ -1,16 +1,9 @@
 :root {
-  --primary-color: #c72727;
-  --secondary-color: #f99500;
   --light-color: #f3f3f3;
   --dark-color: #333;
   --max-width: 1100px;
 }
 
-.category {
-  --sports-color: #f99500;
-  --ent-color: #866bbe;
-  --tech-color: #009cff;
-}
 * {
   margin: 0;
   padding: 0;
@@ -81,7 +74,7 @@ h1 {
   color: #eaeaea;
 }
 #main-nav ul li a.current {
-  background: var(--primary-color);
+  background: #699ea0;
   color: #fff;
 }
 #main-nav ul li a:hover {
@@ -153,7 +146,9 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
 }
-
+#main-content .author-content i{
+  font-size: 1.2em;
+}
 /* blog posts */
 .blog-posts{
   display: flex;
@@ -165,5 +160,35 @@ h1 {
 }
 
 /* Footer */
+#main-footer{
+  background-color: #1a1d24;
+  width: 100%;
+  margin-top: 3rem;
+}
+#main-footer .footer-container{
+  margin-top: 60px;
+  color: #fff;
+  clear:both;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em 1em 2em;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center ;
+}
 
+#main-footer li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+#main-footer li span{
+  font-family: "Lato";
+}
+#main-footer .page-footer-copyright{
+  font-size: 13.75px;
+}
 
