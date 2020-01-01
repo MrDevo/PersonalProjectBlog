@@ -24,9 +24,10 @@ ul {
   list-style: none;
 }
 h1 {
-  font-family: "Staatliches", cursive;
+  font-family: "Lato", cursive;
   margin-bottom: 0.55rem;
   line-height: 1.3;
+  font-size: 34px;
 }
 #my-title{
   font-size: 2rem;
@@ -93,7 +94,8 @@ h1 {
 }
 
 /* Main content */
-#main-content {
+#main-content,
+#main-article-area {
   margin-top: 20px;
 }
 #main-content .grid-container{
@@ -103,10 +105,8 @@ h1 {
   margin-right: 2rem;
   grid-gap: 25px;
 }
-#main-content .author-avatar{
-  margin-top: 10px;
-}
-#main-content #location{
+#main-content #location,
+#main-article-area #location{
   font-size:0.80rem;
   font-weight: initial;
 }
@@ -118,7 +118,8 @@ h1 {
   margin-top: 50px;
   font-weight: bolder;
 }
-#main-content .author-avatar img{
+#main-content .author-avatar img,
+#main-article-area .author-avatar img{
   max-width: 110px;
   border-radius: 50%;
   border: 1px solid #51555d;
@@ -127,26 +128,32 @@ h1 {
   vertical-align: middle;
   height: auto;
 }
-#main-content .author-avatar{
+#main-content .author-avatar,
+#main-article-area .author-avatar{
   display: block;
   width: auto;
   height: auto;
+  margin-top: 10px;
 }
-#main-content .sidebar{
+#main-content .sidebar,
+#main-article-area .sidebar{
   font-weight: bold;
   color: #eaeaea;
 }
-#main-content .author-name{
+#main-content .author-name,
+#main-article-area .author-name{
   margin-top: 10px;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-#main-content .author-content{
+#main-content .author-content,
+#main-article-area .author-content{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#main-content .author-content i{
+#main-content .author-content i,
+#main-article-area .author-content i{
   font-size: 1.2em;
 }
 /* blog posts */

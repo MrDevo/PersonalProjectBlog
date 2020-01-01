@@ -1,0 +1,29 @@
+@import "/css/style.css";
+/* @import "/css/mobile.css"; */
+
+#main-article-area{
+    color: #eaeaea;
+}
+
+#main-article-area .article-container{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    grid-gap: 25px;
+}
+#main-article-area img{
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#main-article-area .article-one h1{
+    border-bottom: solid #51555d;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    color:#699ea0;
+}
+#main-article-area .article-one p{
+    font-family: "Lato", cursive;
+    font-size: 22px;
+}
